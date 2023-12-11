@@ -28,6 +28,9 @@ const App=()=> {
       locationOfExpenditure: "Inox",
     }
   ];
+  const clickHandler=()=>{
+    console.log("clicked!!")
+  }
 
   return (
     <div>
@@ -39,6 +42,7 @@ const App=()=> {
       <div>
         <ExpenseDetails expenses={expenses} />
       </div>
+      <button onClick={clickHandler}>Delete Expense</button>
     </div>
   );
 }
